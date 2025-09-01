@@ -104,7 +104,7 @@ deploy:
   type: git
   repo: https://github.com/yunzhiqiao1/yunzhiqiao
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: main
+  branch: html
 feed:
   type: atom
   path: atom.xml
