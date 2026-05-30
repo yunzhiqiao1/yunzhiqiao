@@ -44,12 +44,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
-highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+highlight:  
+ enable: true  
+ auto_detect: true  
+ line_number: true  
+ tab_replace:  
+ mathjax: true  
 prismjs:
   preprocess: true
   line_number: true
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: maupassant-hexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -109,5 +109,13 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
 
 rss: /atom.xml
