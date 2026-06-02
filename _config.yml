@@ -4,9 +4,9 @@
 
 # Site
 title: 云智乔
-subtitle: 个人博客网站，分享好用的在线工具
-description: 云智乔是一个专注于分享实用免费在线工具的个人博客网站，致力于为用户提供高质量的数字资源和使用指南。在这个数字化时代，我们通过精心筛选和测试各类网络工具，帮助提升工作效率、优化生活品质。
-keywords: 免费在线工具
+subtitle: 免费在线工具 · 自动化采集 · 英语学习 — 独立开发者的效率工具箱
+description: 云智乔博客分享免费在线工具教程、自动化数据采集技巧、英语学习方法与独立开发经验。提供JSON格式化、图片压缩等实用工具使用指南，一键采集自动化方案，以及AI辅助英语口语练习攻略，帮你提升工作与学习效率。
+keywords: 免费在线工具,在线工具推荐,自动化数据采集,一键采集工具,英语学习方法,AI英语口语练习,独立开发者,效率工具,云智乔
 author: yunzhiqiao
 language: zh-CN
 timezone: ''
@@ -14,11 +14,12 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://yunzhiqiao1.github.io/yunzhiqiao/
-permalink: :year/:month/:day/:title/
+root: /yunzhiqiao/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false
+  trailing_html: false
 
 # Directory
 source_dir: source
@@ -97,6 +98,11 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: maupassant-hexo
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+  rel: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

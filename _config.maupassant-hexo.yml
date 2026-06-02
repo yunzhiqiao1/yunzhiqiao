@@ -51,14 +51,14 @@ utterances: ## See: https://utteranc.es
 
 
 donate:
-  enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  enable: true ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
-  alipay_qr: /img/zhifubao.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
-  wechat_qr: /img/zhifubao.png ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
-  btc_qr: /img/weixin.png ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
-  paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+  alipay_qr: /yunzhiqiao/img/zhifubao.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+  wechat_qr: /yunzhiqiao/img/weixin.png ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  # btc_qr: /yunzhiqiao/img/weixin.png ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
+  # paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
 
-google_search: true ## Use Google search, true/false.
+google_search: false ## Use Google search, true/false.
 baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 self_search: false ## Use a jQuery-based local search engine, true/false.
@@ -67,7 +67,7 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
-busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 wordcount: false ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
@@ -80,7 +80,7 @@ canvas_nest:
 post_copyright:
   enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
   author: 云智乔 ## Your author name, e.g. tufu9441
-  copyright_text: 云智乔 ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+  copyright_text: 本文由云智乔原创，转载请注明出处。更多实用工具请访问 yunzhiqiao.site ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
 love: false ## If you want the love to appear when you click anywhere, set the value to true.
 plantuml: ## Using PlantUML to generate UML diagram, must install hexo-filter-plantuml (https://github.com/miao1007/hexo-filter-plantuml).
   render: "PlantUMLServer" ## Local or PlantUMLServer.
@@ -116,27 +116,35 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
   - links
 
 info:
-  avatar: /img/favicon.png
-  discription: 个人博客网站，分享好用的在线工具。
+  avatar: /yunzhiqiao/img/favicon.png
+  discription: 免费在线工具 · 自动化采集 · 英语学习 | 独立开发者的效率工具箱
   outlinkitem:
+    - name: 官网
+      outlink: https://yunzhiqiao.site/
+      message: 云智乔官网
     - name: 小红书
       outlink: https://www.xiaohongshu.com/user/profile/65edb918000000000b030621
       message: 小红书
-    - name: 官网
-      outlink: https://yunzhiqiao.site/
-      message: Email
     - name: github
-      outlink: https://github.com/NSGUF
+      outlink: https://github.com/yunzhiqiao1
       message: Github
     - name: rss
       outlink: /atom.xml
       message: RSS
 
 links:
-  - title: 云智乔官网
-    url: http://yunzhiqiao.site/
+  - title: 云智乔 - 在线工具
+    url: https://yunzhiqiao.site/
     src: https://yunzhiqiao.site/favicon.ico
-    desc: 云智乔官网
+    desc: 免费实用在线工具集合
+  - title: 自动化采集工具
+    url: https://yunzhiqiao.site/auto
+    src: https://yunzhiqiao.site/favicon.ico
+    desc: 小白也能用的一键数据采集
+  - title: Getting Better 英语学习
+    url: https://yunzhiqiao.site/getting-better
+    src: https://yunzhiqiao.site/favicon.ico
+    desc: AI辅助英语口语练习App
 
 timeline:
   - num: 1

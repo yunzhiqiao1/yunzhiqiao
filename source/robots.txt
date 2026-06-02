@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yunzhiqiao1.github.io/yunzhiqiao/sitemap.xml
